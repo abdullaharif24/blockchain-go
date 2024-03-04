@@ -30,7 +30,6 @@ func NewBlock(index int, timestamp, data, hash, prevHash string) Block {
     return Block{Index: index, Timestamp: timestamp, Data: data, Hash: hash, PrevHash: prevHash}
 }
 
-
 // ModifyBlock modifies an existing block in the blockchain
 func ModifyBlock(block *Block, data string) {
     block.Data = data
